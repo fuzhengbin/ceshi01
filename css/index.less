@@ -1,0 +1,144 @@
+// 导入basecss文件
+@import url(./base.css);
+// 声明基准值变量
+@baseSize:3.75vw;
+.suspension{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1;
+}
+.m-navbar{
+    padding: 0 (12/@baseSize) 0 (18/@baseSize);
+    display: flex;
+    justify-content: space-between;
+    height: (44/@baseSize);
+    align-items: center;
+    .logo {
+        i{
+            color: #fb7299;
+            font-size: (28/@baseSize);
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+
+        .search{
+            color: #ccc;
+            i{
+                font-size: (22/@baseSize);
+            }
+        }
+        .face{
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 (20/@baseSize);
+            width: (24/@baseSize);
+            height: (24/@baseSize);
+        }
+        .app-btn{
+            width: (72/@baseSize);
+            height: (24/@baseSize);
+        }
+    }
+}
+.channel-menu{
+    height: (40/@baseSize);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .after{
+        width: (40/@baseSize);
+        height: (40/@baseSize);
+        text-align: center;
+        line-height: (40/@baseSize);
+        color: #ccc;
+        background-color: #fff;
+        i{
+            font-size: (20/@baseSize);
+        }
+    }
+    .tabs{
+        flex: 1;
+        overflow: hidden;
+        .tabs-list{
+            position: relative;
+            display: flex;
+            a{
+                height: (40/@baseSize);
+                line-height: (40/@baseSize);
+                font-size: (14/@baseSize);
+                white-space: nowrap;
+                padding:0 (16/@baseSize);
+                color: #505050;
+                &:hover{
+                    color: #fb7299;
+                }
+            }
+            .line{
+                position: absolute;
+                left: (16/@baseSize);
+                bottom: 0;
+                width: (28/@baseSize);
+                height: (2/@baseSize);
+                background-color: #fb7299;
+            }
+        }
+    }
+}
+.m-home{
+    margin-top: (80/@baseSize);
+    padding: (5/@baseSize);
+    .video-list{
+        display: flex;
+        flex-wrap: wrap;
+        .video-item{
+            padding: (5/@baseSize);
+            width: 50%;
+            .card{
+                position: relative;
+                height: (97/@baseSize);
+                .count{
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: (28/@baseSize);
+                    line-height: (28/@baseSize);
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 (10/@baseSize);
+                    background: linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+                    i{
+                        font-size: (12/@baseSize);
+                        color: #fff;
+                    }
+                }
+            }
+            p{
+                font-size: (12/@baseSize);
+                color: #212121;
+            }
+        }
+    }
+}
+.openapp{
+    position: fixed;
+    left: (10/@baseSize);
+    bottom: (35/@baseSize);
+    width: (355/@baseSize);
+    height: (38/@baseSize);
+    line-height: (38/@baseSize);
+    text-align: center;
+    background-color: #fb7299;
+    border-radius: (19/@baseSize);
+    color: #fff;
+    span{
+        margin-left: (10/@baseSize);
+        font-size: (14/@baseSize);
+    }
+}

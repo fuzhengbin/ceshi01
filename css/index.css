@@ -1,0 +1,138 @@
+@import url(base.css);
+.suspension {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+}
+.m-navbar {
+  padding: 0 3.2vw 0 4.8vw;
+  display: flex;
+  justify-content: space-between;
+  height: 11.73333333vw;
+  align-items: center;
+}
+.m-navbar .logo i {
+  color: #fb7299;
+  font-size: 7.46666667vw;
+}
+.m-navbar .right {
+  display: flex;
+  align-items: center;
+}
+.m-navbar .right .search {
+  color: #ccc;
+}
+.m-navbar .right .search i {
+  font-size: 5.86666667vw;
+}
+.m-navbar .right .face {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 5.33333333vw;
+  width: 6.4vw;
+  height: 6.4vw;
+}
+.m-navbar .right .app-btn {
+  width: 19.2vw;
+  height: 6.4vw;
+}
+.channel-menu {
+  height: 10.66666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.channel-menu .after {
+  width: 10.66666667vw;
+  height: 10.66666667vw;
+  text-align: center;
+  line-height: 10.66666667vw;
+  color: #ccc;
+  background-color: #fff;
+}
+.channel-menu .after i {
+  font-size: 5.33333333vw;
+}
+.channel-menu .tabs {
+  flex: 1;
+  overflow: hidden;
+}
+.channel-menu .tabs .tabs-list {
+  position: relative;
+  display: flex;
+}
+.channel-menu .tabs .tabs-list a {
+  height: 10.66666667vw;
+  line-height: 10.66666667vw;
+  font-size: 3.73333333vw;
+  white-space: nowrap;
+  padding: 0 4.26666667vw;
+  color: #505050;
+}
+.channel-menu .tabs .tabs-list a:hover {
+  color: #fb7299;
+}
+.channel-menu .tabs .tabs-list .line {
+  position: absolute;
+  left: 4.26666667vw;
+  bottom: 0;
+  width: 7.46666667vw;
+  height: 0.53333333vw;
+  background-color: #fb7299;
+}
+.m-home {
+  margin-top: 21.33333333vw;
+  padding: 1.33333333vw;
+}
+.m-home .video-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.m-home .video-list .video-item {
+  padding: 1.33333333vw;
+  width: 50%;
+}
+.m-home .video-list .video-item .card {
+  position: relative;
+  height: 25.86666667vw;
+}
+.m-home .video-list .video-item .card .count {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7.46666667vw;
+  line-height: 7.46666667vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.66666667vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), transparent);
+}
+.m-home .video-list .video-item .card .count i {
+  font-size: 3.2vw;
+  color: #fff;
+}
+.m-home .video-list .video-item p {
+  font-size: 3.2vw;
+  color: #212121;
+}
+.openapp {
+  position: fixed;
+  left: 2.66666667vw;
+  bottom: 9.33333333vw;
+  width: 94.66666667vw;
+  height: 10.13333333vw;
+  line-height: 10.13333333vw;
+  text-align: center;
+  background-color: #fb7299;
+  border-radius: 5.06666667vw;
+  color: #fff;
+}
+.openapp span {
+  margin-left: 2.66666667vw;
+  font-size: 3.73333333vw;
+}
